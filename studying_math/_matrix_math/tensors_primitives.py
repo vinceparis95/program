@@ -22,6 +22,4 @@ tensor = [[[1,2,3],
 # a transposed matrix
 trvector = np.transpose(vector)
 
-# dot products
-print(np.dot(scalar,vector))
-print(np.dot(vector,trvector))
+print(vector, "\n", trvector)
