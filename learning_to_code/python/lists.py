@@ -1,26 +1,42 @@
 
+# create a list with an item
 holyDays = ["Naw Ruz"]
-print(holyDays)
-print(holyDays[0])
-print(f"the first Holy Day is: ", {holyDays[0]})
+print("Baha'i Holy Days: ", holyDays)
 
-
+# append an item to a list
 holyDays.append("Ridvan")
-print(f"the second Twin Holy Day is: ", {holyDays[1]})
-print(holyDays)
 
+# access the second item in the list
+print("added: ", {holyDays[1]})
+
+# print appended list
+print("Baha'i Holy Days: ", holyDays)
+
+# pop the first item
 nawruz = holyDays.pop(0)
-print(nawruz)
+print("first popped item: " , nawruz)
+
+# pop the second item
 ridvan = holyDays.pop()
-print(ridvan)
+print("second popped item: ", ridvan)
+
+# add both items back, reversing order
 holyDays.append(ridvan)
 holyDays.append(nawruz)
 print(holyDays)
 
+# add a third item
 holyDays.append("Martyrdom of the Bab")
-print(holyDays)
-martyrdomOfTheBab = holyDays.pop()
-print(martyrdomOfTheBab)
-print(holyDays)
+# access at final index, 2
+print("added: ", holyDays[2])
+print("Baha'i Holy Days: ", holyDays)
 
-print(holyDays.__len__())
+# prepare box for last item
+martyrdomOfTheBab = holyDays.pop()
+print("popped: ", martyrdomOfTheBab)
+
+# print remaining items
+print("Baha'i Holy Days: ", holyDays)
+
+# print length
+print("length of Holy Day list: ", holyDays.__len__())
